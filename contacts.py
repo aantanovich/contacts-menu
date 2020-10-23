@@ -1,10 +1,15 @@
-supplies = ['pens', 'cans', 'binders']
-for i in range(len(supplies)):
-    print('Index ' + str(i) + ' in supplies is: ' + supplies[i])
-
-supplies += ['penciles']
-print(supplies[:])
-supplies.insert(2, 'fans')
-print(supplies[:])
-del supplies[-1]
-print(supplies[:])
+birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'}
+while True:
+    print('Enter a name: (blank to quit)')
+    name = input()
+    if name == '':
+        break
+    if name in birthdays:
+        print(birthdays[name] + ' is the birthday of ' + name)
+    else:
+        print('I do not have birthday information for ' + name)
+        print('What is their birthday?')
+        bday = input()
+        birthdays[name] = bday
+        print('Database updated.')
+        
