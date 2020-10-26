@@ -2,6 +2,7 @@ allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
             'Bob': {'ham sandwiches': 3, 'apples': 2},
             'Carol': {'cups': 3, 'apple pies': 1}}
 
+#function that counts total of each item
 def totalBrought(guests, item):
     numBrought = 0
     for k, v in guests.items():
@@ -18,7 +19,7 @@ print(' - Apple Pies ' + str(totalBrought(allGuests, 'apple pies')))
 
 #inventory.py
 print('\n')
-stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12, 'flask': 1}
 def displayInventory(inventory):
     print('Inventory:')
     totalInventory = 0
